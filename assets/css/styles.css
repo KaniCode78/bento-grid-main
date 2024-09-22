@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+body {
+    font-size: 18px;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    background-color:hsl(0, 0%, 100%);
+}
+
+
+
+
+a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*Caja numero 1 */
+
+
+.box1{
+    padding: 5rem;
+    background-color: hsl(228, 45%, 44%);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+
+.box1 h1{
+    
+    font-weight: 400;
+}
+.box1 span{
+    color:hsl(39, 100%, 71%);
+}
+
+
+.box1 img{
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .box1 {
+      background-color: purple;
+    }
+}
+
+/*Caja numero 2 */
+
+.box2{
+    padding:2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: auto;
+    color: hsl(0, 0%, 7%);
+    margin: 0;
+}
+
+.box2 img{
+    width: 100%;
+    height: auto;
+}
+
+.box2 h2{
+    text-align: left;
+    font-size: 19px;
+}
+
+/*Caja numero */
+
+.box3{
+    padding: 2rem;
+    background-color:  hsl(39, 100%, 71%);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 7%);
+    font-weight: 400;
+}
+
+.box3 h2{
+    text-align: left;
+    font-size: 24px;
+}
+
+.box3 img  {
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    align-content: end;
+}
+
+/*Caja numero 4*/
+
+.box4{
+    border-radius: 5px;
+    background-color: hsl(254, 88%, 90%);
+    padding: 2rem;
+    margin: 10px;
+}
+
+.box4 img{
+    width: 100%;
+    height: auto;
+}
+
+/* caja numero 5*/
+
+.box5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    padding: 2rem;
+    background-color: hsl(256, 67%, 59%);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+.box5 img{
+    width: 80%;
+    height: auto;
+    
+}
+
+.box5 h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+/*Caja numero 6*/
+
+.box6{
+    border-radius: 5px;
+    
+    padding: 2rem;
+    margin: 10px;
+    text-align: left;
+}
+
+.box6 span{
+    color: hsl(0, 0%, 7%);
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.box6 img{
+    width: 60%;
+    height: auto;
+}
+
+/*Caja numero 7*/
+
+.box7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #FAEEE2;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 7%);
+    font-weight: 400;
+}
+
+.box7 h2{
+    text-align: left;
+    font-weight: 400;
+}
+
+.box7 span{
+    color: hsl(256, 67%, 59%);
+    font-style:oblique;
+}
+
+
+.box7 img{
+    width: 60%;
+    height: auto;
+}
+
+/*Caja numero 8*/
+
+.box8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 2rem;
+    background-color: hsl(39, 100%, 71%);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 7%);
+    font-weight: 400;
+}
+
+.box8 h2{
+    text-align: left;
+    font-weight: 500;
+    font-size: 24px;
+    padding-right: 5rem;
+}
+
+.box8 img{
+    width: 80%;
+    height: auto;
+
+}

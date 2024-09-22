@@ -5,7 +5,9 @@ body {
     font-size: 18px;
     text-align: center;
     font-family: "DM Sans", sans-serif;
-    background-color:hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    height: 100vh;
 }
 
 
@@ -15,12 +17,17 @@ a {
     color: hsl(228, 45%, 44%);
 }
 
+
+/* Caja Grid */
+
+
+
 /*Caja numero 1 */
 
 
-.box1{
+.box1 {
     padding: 5rem;
-    background-color: hsl(228, 45%, 44%);
+    background-color: hsl(256, 67%, 59%);
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
@@ -29,31 +36,26 @@ a {
 }
 
 
-.box1 h1{
-    
+.box1 h1 {
     font-weight: 400;
 }
-.box1 span{
-    color:hsl(39, 100%, 71%);
+
+.box1 span {
+    color: hsl(39, 100%, 71%);
 }
 
 
-.box1 img{
+.box1 img {
     width: 50%;
     height: auto;
     max-width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-    .box1 {
-      background-color: purple;
-    }
-}
 
 /*Caja numero 2 */
 
-.box2{
-    padding:2rem;
+.box2 {
+    padding: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
     height: auto;
@@ -61,21 +63,21 @@ a {
     margin: 0;
 }
 
-.box2 img{
+.box2 img {
     width: 100%;
     height: auto;
 }
 
-.box2 h2{
+.box2 h2 {
     text-align: left;
     font-size: 19px;
 }
 
 /*Caja numero */
 
-.box3{
+.box3 {
     padding: 2rem;
-    background-color:  hsl(39, 100%, 71%);
+    background-color: hsl(39, 100%, 71%);
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
@@ -83,12 +85,12 @@ a {
     font-weight: 400;
 }
 
-.box3 h2{
+.box3 h2 {
     text-align: left;
     font-size: 24px;
 }
 
-.box3 img  {
+.box3 img {
     width: 80%;
     height: auto;
     max-width: 100%;
@@ -98,27 +100,27 @@ a {
 
 /*Caja numero 4*/
 
-.box4{
+.box4 {
     border-radius: 5px;
     background-color: hsl(254, 88%, 90%);
     padding: 2rem;
     margin: 10px;
 }
 
-.box4 img{
+.box4 img {
     width: 100%;
     height: auto;
 }
 
 /* caja numero 5*/
 
-.box5{
+.box5 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    
+
     padding: 2rem;
     background-color: hsl(256, 67%, 59%);
     padding: 20px;
@@ -128,13 +130,13 @@ a {
     font-weight: 400;
 }
 
-.box5 img{
+.box5 img {
     width: 80%;
     height: auto;
-    
+
 }
 
-.box5 h2{
+.box5 h2 {
     text-align: center;
     font-size: 22px;
     font-weight: 400;
@@ -144,28 +146,28 @@ a {
 
 /*Caja numero 6*/
 
-.box6{
+.box6 {
     border-radius: 5px;
-    
+
     padding: 2rem;
     margin: 10px;
     text-align: left;
 }
 
-.box6 span{
+.box6 span {
     color: hsl(0, 0%, 7%);
     font-weight: 400;
     font-size: 40px;
 }
 
-.box6 img{
+.box6 img {
     width: 60%;
     height: auto;
 }
 
 /*Caja numero 7*/
 
-.box7{
+.box7 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,18 +180,18 @@ a {
     font-weight: 400;
 }
 
-.box7 h2{
+.box7 h2 {
     text-align: left;
     font-weight: 400;
 }
 
-.box7 span{
+.box7 span {
     color: hsl(256, 67%, 59%);
-    font-style:oblique;
+    font-style: oblique;
 }
 
 
-.box7 img{
+.box7 img {
     width: 60%;
     height: auto;
 }
@@ -209,15 +211,101 @@ a {
     font-weight: 400;
 }
 
-.box8 h2{
+.box8 h2 {
     text-align: left;
     font-weight: 500;
     font-size: 24px;
     padding-right: 5rem;
 }
 
-.box8 img{
+.box8 img {
     width: 80%;
     height: auto;
+
+}
+
+
+/*media queries*/
+
+@media screen and (min-width: 768px) {
+    .master-box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 10px;
+        grid-gap: 10px;
+         height: 100vh; 
+         width: 100vw; 
+    }
+
+    .box1 {
+        grid-area: 1 / 2 / 2 / 4;
+        font-size: 30px;
+
+    }
+
+    .box2 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .box3 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .box4 {
+        grid-area: 1 / 4 / 3 / 5;
+    }
+
+    .box5 {
+        grid-area: 3 / 3 / 4 / 5;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box5 img {
+        width: 40%;
+        height: auto;
+    
+    }
+    
+    .box5 h2 {
+        text-align: left;
+        font-size: 3rem;
+        font-weight: 500;
+        
+    }
+
+
+    .box6 {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .box8 {
+        grid-area: 2 / 1 / 4 / 2;
+    }
+
+    .box7 {
+        grid-area: 1 / 1 / 2 / 2;
+
+    }
+
+
+    .box7 h2 {
+        text-align: left;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .box7 span {
+        color: hsl(256, 67%, 59%);
+        font-style: oblique;
+    }
+
+
+    .box7 img {
+        width: 100%;
+        height: auto;
+    }
 
 }

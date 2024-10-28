@@ -28,6 +28,8 @@ a {
 
 
 
+
+
 /*Caja numero 1 */
 
 
@@ -46,6 +48,7 @@ a {
     font-weight: 400;
 }
 
+
 .box1 span {
     color: hsl(39, 100%, 71%);
 }
@@ -58,6 +61,8 @@ a {
 }
 
 
+
+
 /*Caja numero 2 */
 
 .box2 {
@@ -67,6 +72,10 @@ a {
     height: auto;
     color: hsl(0, 0%, 7%);
     margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .box2 img {
@@ -75,11 +84,19 @@ a {
 }
 
 .box2 h2 {
+    display: flex;
     text-align: left;
-    font-size: 19px;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
-/*Caja numero */
+.box2 br {
+    display: none;
+} 
+
+
+
+/*Caja numero 3 */
 
 .box3 {
     padding: 2rem;
@@ -93,7 +110,9 @@ a {
 
 .box3 h2 {
     text-align: left;
-    font-size: 24px;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
 }
 
 .box3 img {
@@ -148,6 +167,7 @@ a {
     font-weight: 400;
     padding-left: 5rem;
     padding-right: 5rem;
+    line-height: 3rem;
 }
 
 /*Caja numero 6*/
@@ -188,7 +208,9 @@ a {
 
 .box7 h2 {
     text-align: left;
+  
     font-weight: 400;
+    padding-bottom: 1rem;
 }
 
 .box7 span {
@@ -198,7 +220,7 @@ a {
 
 
 .box7 img {
-    width: 60%;
+    width: 50%;
     height: auto;
 }
 
@@ -255,9 +277,24 @@ a {
         align-content: center;
     }
 
+.box1 h1{
+    padding-bottom: 1rem;
+    font-size: 5rem;
+}
+
     .box1 p {
         font-size: 20px;
     }
+
+
+   
+
+    .box1 img{
+        width: 25%;
+        height: auto;
+    }
+
+
 
     /* Caja 2*/
 
@@ -266,11 +303,15 @@ a {
 
     }
 
+    
+
     .box2 h2 {
-        font-size: 2.5rem;
-        font-weight: 400;
+        font-size: 3rem;
+        line-height: 3rem;
+        
     }
 
+    
 
 
     .box3 {
@@ -318,7 +359,9 @@ a {
     .box7 h2 {
         text-align: left;
         font-weight: 400;
-        font-size: 30px;
+        font-size: 4rem;
+        flex-wrap: wrap;
+        line-height: 3.5rem;
     }
 
     .box7 span {
@@ -328,8 +371,9 @@ a {
 
 
     .box7 img {
-        width: 100%;
+        width: 60%;
         height: auto;
+        margin: 0 auto;
     }
 
 }

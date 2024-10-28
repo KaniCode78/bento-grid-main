@@ -92,7 +92,7 @@ a {
 
 .box2 br {
     display: none;
-} 
+}
 
 
 
@@ -208,7 +208,7 @@ a {
 
 .box7 h2 {
     text-align: left;
-  
+
     font-weight: 400;
     padding-bottom: 1rem;
 }
@@ -253,7 +253,7 @@ a {
 }
 
 
-/*media queries*/
+/*media queries pantallas grandes*/
 
 @media screen and (min-width: 768px) {
     .master-box {
@@ -277,19 +277,19 @@ a {
         align-content: center;
     }
 
-.box1 h1{
-    padding-bottom: 1rem;
-    font-size: 5rem;
-}
+    .box1 h1 {
+        padding-bottom: 1rem;
+        font-size: 5rem;
+    }
 
     .box1 p {
         font-size: 20px;
     }
 
 
-   
 
-    .box1 img{
+
+    .box1 img {
         width: 25%;
         height: auto;
     }
@@ -303,15 +303,15 @@ a {
 
     }
 
-    
+
 
     .box2 h2 {
         font-size: 3rem;
         line-height: 3rem;
-        
+
     }
 
-    
+
 
 
     .box3 {
@@ -320,7 +320,46 @@ a {
 
     .box4 {
         grid-area: 1 / 4 / 3 / 5;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
+
+    .box4 h2 {
+        font-size: 3rem;
+        text-align: left;
+        line-height: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 3.5rem;
+        font-weight: 400;
+    }
+
+    .box4 img {
+        width: 140%;
+        height: auto;
+        object-fit: cover;
+        margin-left: 3.5rem;
+    }
+
+    .box4 p {
+        font-size: 1.5rem;
+        text-align: left;
+        padding-left: 3.5rem;
+        padding-bottom: 1rem;
+        
+        padding-top: 1rem;
+    }
+
+    .box4 .recorte {
+        clip-path: inset(0 38% 0 0);
+        display: flex;
+        align-items: flex-end;
+    }
+
+
+
 
     .box5 {
         grid-area: 3 / 3 / 4 / 5;
@@ -346,9 +385,6 @@ a {
         grid-area: 3 / 2 / 4 / 3;
     }
 
-    .box8 {
-        grid-area: 2 / 1 / 4 / 2;
-    }
 
     .box7 {
         grid-area: 1 / 1 / 2 / 2;
@@ -359,7 +395,7 @@ a {
     .box7 h2 {
         text-align: left;
         font-weight: 400;
-        font-size: 4rem;
+        font-size: 3.5rem;
         flex-wrap: wrap;
         line-height: 3.5rem;
     }
@@ -376,4 +412,9 @@ a {
         margin: 0 auto;
     }
 
+}
+
+
+.box8 {
+    grid-area: 2 / 1 / 4 / 2;
 }
